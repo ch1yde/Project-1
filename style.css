@@ -42,7 +42,10 @@ body{
 
 .button-section {
     width: 100%;
-    ;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 
@@ -77,4 +80,20 @@ textarea {
 .selectors{
     border: 0px;
 
+}
+
+@media (max-width: 768px) {
+    .Form {
+        width: 90%;            /* Give it more room on small screens */
+        margin: 20px auto;
+    }
+
+    .formContent {
+        flex-direction: column; /* Force columns to stack vertically */
+        gap: 15px;              /* Tighten the gap for smaller space */
+    }
+
+    .form1, .form2 {
+        width: 100%;            /* Expand to take up the full width of the form */
+    }
 }
