@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="images/hotels-fav.jpg" type="image/jpg">
         <title>My first website</title>
     </head>
@@ -112,10 +112,29 @@
             <br>
             <br>
             <p>Interacting with another page: </p>
-            <a href="lyrics.html" title="Sofia The First Lyrics" target="_blank">
-                <button style="border-radius:20px; background-color:rgb(186, 134, 219); font-size:20px; border:0px" >Go to Page 2</button>
+            <a href="pages/lyrics.html" title="Sofia The First Lyrics" target="_blank">
+                <button class="lyricsPage" style="border-radius:20px; background-color:rgb(186, 134, 219); font-size:20px; border:0px" >Go to Page 2</button>
+            </a>
+            <br>
+            <br>
+            
+            <p id="changingText" >Hello!</p>
+            <button onclick="doSomething()" title="Greeting" style="border-radius:20px; border:0px; background-color:rgb(186, 134, 219); font-size:20px">Change the text</button>
+
+            <script>
+                function doSomething() {
+                    document.getElementById("changingText").innerHTML = "Goodbye!"
+                }
+            </script>
+
+            <p>Click the link below for a form</p>
+            <a href="pages/forms.html" target="_blank">
+            <button style="border-radius:20px; border:0px; background-color:rgb(186, 134, 219); font-size:20px">
+                Form
+            </button>
             </a>
         </div>
+
         <br>
         <br>
     </body> 
