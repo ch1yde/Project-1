@@ -96,4 +96,10 @@ textarea {
     .form1, .form2 {
         width: 100%;            /* Expand to take up the full width of the form */
     }
+
+    .inputDetails{
+        width: 100%;
+        justify-content: center;
+
+    }
 }
