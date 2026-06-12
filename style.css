@@ -84,8 +84,8 @@ textarea {
 
 @media (max-width: 768px) {
     .Form {
-        width: 90%;            /* Give it more room on small screens */
-        margin: 20px auto;
+        width: 85%;            /* Give it more room on small screens */
+        margin: 15px auto;
     }
 
     .formContent {
