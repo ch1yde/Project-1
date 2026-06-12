@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../images/hotels-fav.jpg" type="image/jpg">
         <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>Form</title>
     </head>
 
@@ -15,43 +18,45 @@
             <form action="../index.html" class="formContent">
                 <div class="form1">
                     <label for="username" class="labels">Username: </label><br>
-                    <input type="text" minlength="3" maxlength="10" placeholder="enter username" required id="username"><br>
+                    <input class="inputDetails" type="text" minlength="3" maxlength="10" required id="username"><br>
 
                     <label for="password" class="labels">Password: </label><br>
-                    <input type="password" minlength="8" placeholder="enter password" id="password"><br>
+                    <input class="inputDetails" type="password" minlength="8" id="password"><br>
                     
                     <label for="email" class="labels">Email: </label><br>
-                    <input type="email" id="email" placeholder="example@gmail.com" required><br>
+                    <input class="inputDetails" type="email" id="email" required><br>
 
                     <label for="gender" class="labels"></label>Gender:<br>
                     <label for="male" class="labels">Male: </label>
-                    <input type="radio" id="male" name="gender">
+                    <input type="radio" id="male" name="gender"class="selector">
                     <label for="female" class="labels">Female: </label>
-                    <input type="radio" id="female" name="gender"> <br>
+                    <input type="radio" id="female" name="gender" class="selector"> <br>
                     <br>
                     
                     <label for="bday" class="labels">Birthday</label> <br>
-                    <input type="date" id="bday"><br>
+                    <input class="inputDetails" type="date" id="bday"><br>
                 </div>
-                <div class="form1">
+                <div class="form2">
                     <label for="phone" class="labels">Phone Number: </label><br>
-                    <input type="tel" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="09**-***-**32"><br>
+                    <input class="inputDetails" type="tel" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"><br>
                     <label for="quantity" class="labels">Order Quantity: </label><br>
-                    <input type="number" id="quantity"><br>
+                    <input class="inputDetails" type="number" id="quantity"><br>
                     
                     <label for="device" class="labels">Device being used: </label><br>
                     <label for="phone" class="labels">Phone</label>
-                    <input type="checkbox" id="phone" name="device">
+                    <input type="checkbox" id="phone" name="device" class="selector">
                     <label for="tablet" class="labels">Tablet</label>
-                    <input type="checkbox" id="tablet" name="device"><br>
+                    <input class="selector" type="checkbox" id="tablet" name="device" ><br>
                     
-                    <label for="note" class="labels">Give a note: </label>
+                    <label for="note" class="labels">Give a note: </label><br>
                     <textarea id="note" rows="4" cols="20"></textarea> <br>
 
                     
                     <label for="file" class="labels">Import a File: </label><br>
-                    <input type="file" id="file" accept="image/jpeg, image/png"> <br>
+                    <input class="inputDetails" type="file" id="file" accept="image/jpeg, image/png"> <br>
                     <br>
+                </div>
+                <div class="button-section">
                     <input type="reset">
                     <input type="submit">
                 </div>
